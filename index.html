@@ -53,19 +53,19 @@
     }
 
     body{
-  font-family:"Poppins",sans-serif;
-  color:var(--text);
-  line-height:1.7;
-  overflow-x:hidden;
-  background:
-    linear-gradient(rgba(12, 0, 22, .70), rgba(28, 3, 43, .76)),
-    url("images/purple-gold-bg.webp");
-  background-color:#220432;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center top;
-  background-attachment:fixed;
-}
+      font-family:"Poppins",sans-serif;
+      color:var(--text);
+      line-height:1.7;
+      overflow-x:hidden;
+      background:
+        linear-gradient(rgba(12, 0, 22, .70), rgba(28, 3, 43, .76)),
+        url("images/purple-gold-bg.webp");
+      background-color:#220432;
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:center top;
+      background-attachment:fixed;
+    }
 
     img{
       display:block;
@@ -83,10 +83,10 @@
     }
 
     .announcement-bar{
-      background:linear-gradient(90deg, rgba(216,169,58,.22), rgba(109,18,152,.26));
-      border-bottom:1px solid rgba(236,194,82,.18);
+      background:linear-gradient(90deg, rgba(216,169,58,.28), rgba(109,18,152,.26));
+      border-bottom:1px solid rgba(236,194,82,.22);
       color:#fff4d8;
-      font-size:.92rem;
+      font-size:.95rem;
       backdrop-filter:blur(10px);
     }
 
@@ -96,7 +96,11 @@
       justify-content:center;
       gap:10px 18px;
       text-align:center;
-      padding:10px 0;
+      padding:12px 0;
+    }
+
+    .announcement-inner strong{
+      color:#ffe8a3;
     }
 
     .topbar{
@@ -550,6 +554,17 @@
       margin-right:4px;
     }
 
+    .old-price{
+      text-decoration:line-through;
+      opacity:.58;
+      margin-right:6px;
+    }
+
+    .new-price{
+      color:var(--gold2);
+      font-weight:700;
+    }
+
     .highlights{
       margin-top:28px;
       display:grid;
@@ -858,7 +873,7 @@
 
   <div class="announcement-bar">
     <div class="container announcement-inner">
-      <span><strong>10% Eröffnungsrabatt</strong> auf Ihren Besuch</span>
+      <span><strong>20% Osterrabatt</strong> auf alle Massagen – nur bis Ende Ostern</span>
       <span>🅿️ Kostenloses Parken direkt am Haus</span>
       <span>📞 Termin per Telefon oder WhatsApp</span>
     </div>
@@ -888,7 +903,7 @@
 
   <header class="hero" id="top">
     <div class="container hero-inner">
-      <div class="eyebrow">Traditionelle Thai-Massage für Körper, Geist und Wohlbefinden</div>
+      <div class="eyebrow">20% Osterrabatt auf alle Massagen – gültig bis Ende Ostern</div>
       <img class="hero-logo" src="images/logo.webp" alt="Mayyah Thaimassage Logo" />
 
       <h1>Entspannung auf höchstem Niveau</h1>
@@ -961,9 +976,9 @@
 
         <div class="promo-grid">
           <div class="promo-box">
-            <h3>10% Eröffnungsrabatt</h3>
+            <h3>20% Osterrabatt</h3>
             <p>
-              Lernen Sie unser Studio und unsere Anwendungen jetzt zum attraktiven Eröffnungspreis kennen.
+              Sichern Sie sich jetzt Ihren Termin mit 20% Rabatt auf alle Massagen – nur bis Ende Ostern.
             </p>
           </div>
           <div class="promo-box">
@@ -1026,7 +1041,7 @@
             </p>
 
             <ul class="list">
-              <li><strong>10% Eröffnungsrabatt</strong> – unser Kennenlern-Angebot</li>
+              <li><strong>20% Osterrabatt</strong> – auf alle Massagen bis Ende Ostern</li>
               <li><strong>Mo – Fr:</strong> 10:00 – 19:00 Uhr</li>
               <li><strong>Sa:</strong> 10:00 – 18:00 Uhr</li>
               <li><strong>So:</strong> Ruhetag</li>
@@ -1053,7 +1068,7 @@
           <h2>Massagen & Anwendungen</h2>
           <p>
             Unser Angebot umfasst klassische Thai-Massagen, entspannende Öl-Behandlungen
-            sowie spezialisierte Anwendungen für Rücken, Füße, Kopf, Gesicht, Kinder und Paare.
+            sowie spezialisierte Anwendungen für Rücken, Füße, Kopf, Gesicht und Paare.
           </p>
         </div>
 
@@ -1069,9 +1084,8 @@
                 die Durchblutung fördern und die natürliche Regeneration unterstützen.
               </p>
               <div class="prices">
-                <span class="price-pill"><strong>60 Min</strong> 55€</span>
-                <span class="price-pill"><strong>90 Min</strong> 75€</span>
-                <span class="price-pill"><strong>120 Min</strong> 100€</span>
+                <span class="price-pill"><strong>60 Min</strong> <span class="old-price">55€</span><span class="new-price">44€</span></span>
+                <span class="price-pill"><strong>90 Min</strong> <span class="old-price">75€</span><span class="new-price">60€</span></span>
               </div>
             </div>
           </article>
@@ -1087,9 +1101,8 @@
                 Ideal zum Abschalten, Entspannen und Loslassen von Alltagsstress.
               </p>
               <div class="prices">
-                <span class="price-pill"><strong>60 Min</strong> 60€</span>
-                <span class="price-pill"><strong>90 Min</strong> 80€</span>
-                <span class="price-pill"><strong>120 Min</strong> 110€</span>
+                <span class="price-pill"><strong>60 Min</strong> <span class="old-price">60€</span><span class="new-price">48€</span></span>
+                <span class="price-pill"><strong>90 Min</strong> <span class="old-price">80€</span><span class="new-price">64€</span></span>
               </div>
             </div>
           </article>
@@ -1105,9 +1118,8 @@
                 die Beweglichkeit, Körpergefühl und Energiefluss fördern kann.
               </p>
               <div class="prices">
-                <span class="price-pill"><strong>60 Min</strong> 60€</span>
-                <span class="price-pill"><strong>90 Min</strong> 80€</span>
-                <span class="price-pill"><strong>120 Min</strong> 110€</span>
+                <span class="price-pill"><strong>60 Min</strong> <span class="old-price">60€</span><span class="new-price">48€</span></span>
+                <span class="price-pill"><strong>90 Min</strong> <span class="old-price">80€</span><span class="new-price">64€</span></span>
               </div>
             </div>
           </article>
@@ -1123,9 +1135,8 @@
                 Besonders angenehm bei muskulären Verspannungen und Stress.
               </p>
               <div class="prices">
-                <span class="price-pill"><strong>60 Min</strong> 65€</span>
-                <span class="price-pill"><strong>90 Min</strong> 85€</span>
-                <span class="price-pill"><strong>120 Min</strong> 120€</span>
+                <span class="price-pill"><strong>60 Min</strong> <span class="old-price">65€</span><span class="new-price">52€</span></span>
+                <span class="price-pill"><strong>90 Min</strong> <span class="old-price">85€</span><span class="new-price">68€</span></span>
               </div>
             </div>
           </article>
@@ -1141,9 +1152,8 @@
                 wohltuendes Wärmegefühl und tiefe Entspannung.
               </p>
               <div class="prices">
-                <span class="price-pill"><strong>60 Min</strong> 65€</span>
-                <span class="price-pill"><strong>90 Min</strong> 85€</span>
-                <span class="price-pill"><strong>120 Min</strong> 120€</span>
+                <span class="price-pill"><strong>60 Min</strong> <span class="old-price">65€</span><span class="new-price">52€</span></span>
+                <span class="price-pill"><strong>90 Min</strong> <span class="old-price">85€</span><span class="new-price">68€</span></span>
               </div>
             </div>
           </article>
@@ -1159,7 +1169,7 @@
                 fördern Entspannung, Wohlgefühl und eine kleine Auszeit vom Alltag.
               </p>
               <div class="prices">
-                <span class="price-pill"><strong>30 Min</strong> 35€</span>
+                <span class="price-pill"><strong>30 Min</strong> <span class="old-price">30€</span><span class="new-price">24€</span></span>
               </div>
             </div>
           </article>
@@ -1175,7 +1185,7 @@
                 und ein angenehm leichtes Körpergefühl unterstützen.
               </p>
               <div class="prices">
-                <span class="price-pill"><strong>30 Min</strong> 35€</span>
+                <span class="price-pill"><strong>30 Min</strong> <span class="old-price">30€</span><span class="new-price">24€</span></span>
               </div>
             </div>
           </article>
@@ -1191,7 +1201,8 @@
                 muskulären Verspannungen und stressigem Alltag.
               </p>
               <div class="prices">
-                <span class="price-pill"><strong>30 Min</strong> 35€</span>
+                <span class="price-pill"><strong>30 Min</strong> <span class="old-price">30€</span><span class="new-price">24€</span></span>
+                <span class="price-pill"><strong>60 Min</strong> <span class="old-price">60€</span><span class="new-price">48€</span></span>
               </div>
             </div>
           </article>
@@ -1235,7 +1246,7 @@
               ideal für Paare, Freunde oder als gemeinsame Wellness-Zeit.
             </p>
             <div class="prices" style="margin-top:14px;">
-              <span class="price-pill"><strong>60 Min</strong> 100€</span>
+              <span class="price-pill"><strong>60 Min</strong> <span class="old-price">100€</span><span class="new-price">80€</span></span>
             </div>
             <p style="margin-top:14px;">
               Gemeinsam entspannen, abschalten und neue Energie tanken.
@@ -1272,43 +1283,43 @@
             <tbody>
               <tr>
                 <td>Klassische Thaimassage</td>
-                <td>60 / 90 / 120 Min</td>
-                <td>55€ / 75€ / 100€</td>
+                <td>60 / 90 Min</td>
+                <td><span class="old-price">55€ / 75€</span><span class="new-price">44€ / 60€</span></td>
               </tr>
               <tr>
                 <td>Aromaöl Massage</td>
-                <td>60 / 90 / 120 Min</td>
-                <td>60€ / 80€ / 110€</td>
+                <td>60 / 90 Min</td>
+                <td><span class="old-price">60€ / 80€</span><span class="new-price">48€ / 64€</span></td>
               </tr>
               <tr>
                 <td>Thai Yoga Massage</td>
-                <td>60 / 90 / 120 Min</td>
-                <td>60€ / 80€ / 110€</td>
+                <td>60 / 90 Min</td>
+                <td><span class="old-price">60€ / 80€</span><span class="new-price">48€ / 64€</span></td>
               </tr>
               <tr>
                 <td>Hot-Stone-Massage</td>
-                <td>60 / 90 / 120 Min</td>
-                <td>65€ / 85€ / 120€</td>
+                <td>60 / 90 Min</td>
+                <td><span class="old-price">65€ / 85€</span><span class="new-price">52€ / 68€</span></td>
               </tr>
               <tr>
                 <td>Kräuter-Stempel-Massage</td>
-                <td>60 / 90 / 120 Min</td>
-                <td>65€ / 85€ / 120€</td>
+                <td>60 / 90 Min</td>
+                <td><span class="old-price">65€ / 85€</span><span class="new-price">52€ / 68€</span></td>
               </tr>
               <tr>
                 <td>Kopf- & Gesichtsmassage</td>
                 <td>30 Min</td>
-                <td>35€</td>
+                <td><span class="old-price">30€</span><span class="new-price">24€</span></td>
               </tr>
               <tr>
                 <td>Fußmassage</td>
                 <td>30 Min</td>
-                <td>35€</td>
+                <td><span class="old-price">30€</span><span class="new-price">24€</span></td>
               </tr>
               <tr>
                 <td>Rückenmassage</td>
-                <td>30 Min</td>
-                <td>35€</td>
+                <td>30 / 60 Min</td>
+                <td><span class="old-price">30€ / 60€</span><span class="new-price">24€ / 48€</span></td>
               </tr>
               <tr>
                 <td>Massage for Kids</td>
@@ -1323,7 +1334,7 @@
               <tr>
                 <td>Doppel- / Paarmassage</td>
                 <td>60 Min</td>
-                <td>100€</td>
+                <td><span class="old-price">100€</span><span class="new-price">80€</span></td>
               </tr>
             </tbody>
           </table>
@@ -1462,6 +1473,15 @@
           </div>
           <div class="gallery-card">
             <img src="images/studio6.webp" alt="Atmosphäre im Studio Mayyah Thaimassage" />
+          </div>
+          <div class="gallery-card">
+            <img src="images/studio7.webp" alt="Weitere Studioansicht Mayyah Thaimassage" />
+          </div>
+          <div class="gallery-card">
+            <img src="images/studio8.webp" alt="Außenansicht Mayyah Thaimassage" />
+          </div>
+          <div class="gallery-card">
+            <img src="images/studio9.webp" alt="Luxuriöse Atmosphäre im Studio Mayyah Thaimassage" />
           </div>
         </div>
       </div>
