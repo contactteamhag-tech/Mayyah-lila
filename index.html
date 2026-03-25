@@ -127,7 +127,7 @@
       font-size:.93rem;
       color:rgba(246,235,210,.94);
       margin-left:auto;
-      max-width:720px;
+      max-width:760px;
     }
     .nav-links a{
       position:relative;
@@ -301,7 +301,8 @@
     .contact-card,
     .highlight-box,
     .price-table,
-    .promo-box{
+    .promo-box,
+    .review-widget-wrap{
       background:linear-gradient(180deg, rgba(46, 10, 65, .80), rgba(27, 6, 40, .74));
       border:1px solid var(--border);
       border-radius:var(--radius);
@@ -313,7 +314,8 @@
     .feature-box,
     .contact-card,
     .highlight-box,
-    .promo-box{
+    .promo-box,
+    .review-widget-wrap{
       padding:26px;
     }
 
@@ -354,13 +356,16 @@
       gap:18px;
       margin-top:24px;
     }
-    .promo-box{ text-align:left; }
-    .promo-box h3{
+    .promo-box h3,
+    .feature-box h3,
+    .review-widget-wrap h3{
       color:var(--gold2);
       font-size:1.7rem;
       margin-bottom:8px;
     }
-    .promo-box p{
+    .promo-box p,
+    .feature-box p,
+    .review-widget-wrap p{
       color:var(--muted);
       font-size:.96rem;
     }
@@ -370,15 +375,6 @@
       grid-template-columns:repeat(3, 1fr);
       gap:18px;
       margin-top:22px;
-    }
-    .feature-box h3{
-      color:var(--gold2);
-      font-size:1.7rem;
-      margin-bottom:8px;
-    }
-    .feature-box p{
-      color:var(--muted);
-      font-size:.96rem;
     }
 
     .announcement{
@@ -466,10 +462,7 @@
       opacity:.58;
       margin-right:6px;
     }
-    .new-price{
-      color:var(--gold2);
-      font-weight:700;
-    }
+    .new-price,
     .regular-price{
       color:var(--gold2);
       font-weight:700;
@@ -529,6 +522,29 @@
       grid-template-columns:repeat(2, 1fr);
       gap:18px;
       margin-top:20px;
+    }
+
+    .review-section-grid{
+      display:grid;
+      grid-template-columns:0.92fr 1.08fr;
+      gap:24px;
+      align-items:start;
+    }
+    .review-widget-wrap{
+      min-height:100%;
+    }
+    .review-note{
+      margin-top:14px;
+      color:rgba(246,235,210,.72);
+      font-size:.92rem;
+    }
+    .wkdb-embed{
+      margin-top:18px;
+      padding:18px;
+      border-radius:18px;
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(236,194,82,.12);
+      overflow:hidden;
     }
 
     .gallery-grid{
@@ -648,12 +664,13 @@
       .announcement,
       .highlights,
       .voucher-grid,
-      .contact-grid{
+      .contact-grid,
+      .review-section-grid{
         grid-template-columns:1fr;
       }
       .nav{ gap:14px; }
       .nav-links{
-        max-width:640px;
+        max-width:680px;
         gap:12px;
       }
     }
@@ -686,7 +703,8 @@
       .feature-box,
       .contact-card,
       .highlight-box,
-      .promo-box{
+      .promo-box,
+      .review-widget-wrap{
         padding:20px;
       }
       .studio-image,
@@ -731,6 +749,7 @@
       <nav class="nav-links">
         <a href="#studio">Über uns</a>
         <a href="#leistungen">Leistungen</a>
+        <a href="#bewertungen">Bewertungen</a>
         <a href="#preise">Preise</a>
         <a href="#gutscheine">Gutscheine</a>
         <a href="#eindruecke">Studio</a>
@@ -877,6 +896,46 @@
 
             <div class="notice">
               Wir freuen uns darauf, Sie persönlich bei Mayyah Thaimassage begrüßen zu dürfen.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bewertungen">
+      <div class="container">
+        <div class="section-head">
+          <h2>Bewertungen & Kundenerfahrungen</h2>
+          <p>
+            Vertrauen ist bei einer Massage besonders wichtig. Deshalb haben wir das Bewertungs-Widget
+            direkt in die Website integriert, damit Besucherinnen und Besucher echte Rückmeldungen schnell
+            und sichtbar finden.
+          </p>
+        </div>
+
+        <div class="review-section-grid">
+          <div class="review-widget-wrap">
+            <h3>Das sagen unsere Kundinnen & Kunden</h3>
+            <p>
+              Bewertungen schaffen Vertrauen und helfen neuen Gästen dabei, sich ein authentisches Bild
+              von Studio, Service und Atmosphäre zu machen.
+            </p>
+            <div class="badge-row">
+              <span class="badge">Mehr Vertrauen</span>
+              <span class="badge">Direkt auf der Website</span>
+              <span class="badge">Ideal vor der Terminbuchung</span>
+            </div>
+            <div class="review-note">
+              Das Widget ist bewusst oberhalb von Preisübersicht und Kontakt platziert, damit es an einer
+              conversion-starken Stelle sichtbar ist.
+            </div>
+          </div>
+
+          <div class="review-widget-wrap">
+            <h3>Offizielles Bewertungs-Widget</h3>
+            <p>Hier wird das Kunden-Widget von werkenntdenBESTEN.de eingebunden.</p>
+            <div class="wkdb-embed">
+              <div id="wkdb-widget"></div>
             </div>
           </div>
         </div>
@@ -1408,5 +1467,12 @@
   >
     WhatsApp
   </a>
+
+  <!-- werkenntdenBESTEN.de HTML Widget -->
+  <script
+    type="text/javascript"
+    src="https://www.wkdb-siegel.de/v1/widget-*U1KYzBZGieGz5GptkUDuCJBaTyPcq7Q4MjZX168rmGZaUdiFz-qpDfTnARRuzbdCR2RdntLcw3loCN_pdlaOdRc2n5QOPEpvVMyHR4urVFPem2XgdpRbGLTEw8cyuERJBmy9f5YJ2gwnP7xrmTdLG4YxDD71XNwNh6POtkZHQIM.js"
+    async
+  ></script>
 </body>
 </html>
