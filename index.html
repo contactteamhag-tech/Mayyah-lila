@@ -38,8 +38,10 @@
       --max:1240px;
       --success:#27d17f;
     }
+
     *{ margin:0; padding:0; box-sizing:border-box; }
     html{ scroll-behavior:smooth; }
+
     body{
       font-family:"Poppins",sans-serif;
       color:var(--text);
@@ -54,6 +56,7 @@
       background-position:center top;
       background-attachment:fixed;
     }
+
     img{ display:block; max-width:100%; }
     a{ color:inherit; text-decoration:none; }
     .container{ width:min(var(--max), calc(100% - 32px)); margin:0 auto; }
@@ -65,6 +68,7 @@
       font-size:.95rem;
       backdrop-filter:blur(10px);
     }
+
     .announcement-inner{
       display:flex;
       flex-wrap:wrap;
@@ -73,6 +77,7 @@
       text-align:center;
       padding:12px 0;
     }
+
     .announcement-inner strong{ color:#ffe8a3; }
 
     .topbar{
@@ -83,6 +88,7 @@
       background:rgba(26, 4, 39, 0.78);
       border-bottom:1px solid rgba(236,194,82,0.16);
     }
+
     .nav{
       display:flex;
       align-items:center;
@@ -90,6 +96,7 @@
       gap:20px;
       padding:14px 0;
     }
+
     .brand{
       display:flex;
       align-items:center;
@@ -97,6 +104,7 @@
       min-width:0;
       flex:0 1 auto;
     }
+
     .brand img{
       width:64px;
       height:64px;
@@ -104,7 +112,9 @@
       filter:drop-shadow(0 10px 18px rgba(0,0,0,.28));
       flex-shrink:0;
     }
+
     .brand-text{ min-width:0; }
+
     .brand-text strong{
       display:block;
       font-family:"Cormorant Garamond",serif;
@@ -113,12 +123,14 @@
       line-height:1;
       letter-spacing:.02em;
     }
+
     .brand-text span{
       display:block;
       font-size:.86rem;
       color:rgba(246,235,210,.82);
       margin-top:3px;
     }
+
     .nav-links{
       display:flex;
       flex-wrap:wrap;
@@ -129,11 +141,13 @@
       margin-left:auto;
       max-width:760px;
     }
+
     .nav-links a{
       position:relative;
       transition:.2s ease;
       white-space:nowrap;
     }
+
     .nav-links a:hover{ color:var(--gold2); }
 
     .hero{
@@ -150,6 +164,7 @@
       background-size:cover;
       background-position:center;
     }
+
     .hero::before{
       content:"";
       position:absolute;
@@ -157,6 +172,7 @@
       background:linear-gradient(180deg, transparent 0%, rgba(14, 0, 20, .10) 60%, rgba(14, 0, 20, .38) 100%);
       pointer-events:none;
     }
+
     .hero::after{
       content:"";
       position:absolute;
@@ -167,6 +183,7 @@
       background:radial-gradient(circle, rgba(245,214,123,.22), transparent 70%);
       pointer-events:none;
     }
+
     .hero-inner{
       position:relative;
       z-index:1;
@@ -175,6 +192,7 @@
       text-align:center;
       padding:100px 0 86px;
     }
+
     .eyebrow{
       display:inline-flex;
       align-items:center;
@@ -189,27 +207,32 @@
       margin-bottom:20px;
       backdrop-filter:blur(6px);
     }
+
     .hero-logo{
       width:min(240px, 48vw);
       margin:0 auto 22px;
       filter:drop-shadow(0 14px 26px rgba(0,0,0,.32));
     }
+
     h1,h2,h3,h4{
       font-family:"Cormorant Garamond",serif;
       line-height:1.05;
       letter-spacing:.01em;
     }
+
     h1{
       font-size:clamp(3rem, 6vw, 5.6rem);
       margin-bottom:16px;
       color:#fff7e7;
     }
+
     .hero p{
       max-width:860px;
       margin:0 auto;
       font-size:1.08rem;
       color:rgba(255,247,231,.94);
     }
+
     .hero p + p{ margin-top:12px; }
 
     .hero-cta{
@@ -219,6 +242,7 @@
       gap:14px;
       margin-top:30px;
     }
+
     .btn{
       display:inline-flex;
       align-items:center;
@@ -234,16 +258,19 @@
       transition:.22s ease;
       backdrop-filter:blur(5px);
     }
+
     .btn:hover{
       transform:translateY(-2px);
       filter:brightness(1.04);
     }
+
     .btn.primary{
       background:linear-gradient(135deg, #f5d67b, #c98a16);
       color:#2a1200;
       border-color:rgba(236,194,82,.34);
       box-shadow:0 16px 34px rgba(201,138,22,.24);
     }
+
     .btn.secondary{
       background:rgba(255,250,239,.10);
       color:#fff8ea;
@@ -257,6 +284,7 @@
       justify-content:center;
       gap:12px;
     }
+
     .hero-facts span{
       padding:9px 14px;
       border-radius:999px;
@@ -271,16 +299,19 @@
       padding:88px 0;
       position:relative;
     }
+
     .section-head{
       margin-bottom:30px;
       display:flex;
       flex-direction:column;
       gap:10px;
     }
+
     .section-head h2{
       font-size:clamp(2.3rem, 4vw, 3.25rem);
       color:var(--gold2);
     }
+
     .section-head p{
       color:var(--muted);
       max-width:900px;
@@ -309,6 +340,7 @@
       box-shadow:var(--shadow);
       backdrop-filter:blur(8px);
     }
+
     .card,
     .info-box,
     .feature-box,
@@ -337,6 +369,7 @@
       gap:10px;
       margin-top:20px;
     }
+
     .badge{
       display:inline-flex;
       align-items:center;
@@ -356,6 +389,7 @@
       gap:18px;
       margin-top:24px;
     }
+
     .promo-box h3,
     .feature-box h3,
     .review-widget-wrap h3{
@@ -363,6 +397,7 @@
       font-size:1.7rem;
       margin-bottom:8px;
     }
+
     .promo-box p,
     .feature-box p,
     .review-widget-wrap p{
@@ -383,6 +418,7 @@
       gap:24px;
       align-items:stretch;
     }
+
     .announcement img{
       width:100%;
       height:100%;
@@ -392,6 +428,7 @@
       border:1px solid var(--border);
       box-shadow:var(--shadow);
     }
+
     .announcement .info-box h3{
       font-size:2.05rem;
       color:var(--gold2);
@@ -403,6 +440,7 @@
       padding-left:18px;
       color:var(--muted);
     }
+
     .list li + li{ margin-top:8px; }
 
     .services-grid{
@@ -410,29 +448,37 @@
       grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
       gap:22px;
     }
+
     .service-card{
       overflow:hidden;
       transition:.24s ease;
     }
+
     .service-card:hover{ transform:translateY(-6px); }
+
     .service-image{
       height:200px;
       overflow:hidden;
       background:#000;
     }
+
     .service-image img{
       width:100%;
       height:100%;
       object-fit:cover;
       transition:transform .35s ease;
     }
+
     .service-card:hover .service-image img{ transform:scale(1.04); }
+
     .service-content{ padding:18px 18px 16px; }
+
     .service-content h3{
       font-size:1.8rem;
       color:var(--gold2);
       margin-bottom:8px;
     }
+
     .service-content p{
       color:var(--muted);
       font-size:.95rem;
@@ -445,6 +491,7 @@
       flex-wrap:wrap;
       gap:10px;
     }
+
     .price-pill{
       padding:8px 11px;
       border-radius:12px;
@@ -453,15 +500,18 @@
       font-size:.88rem;
       color:#fff1cf;
     }
+
     .price-pill strong{
       color:var(--gold2);
       margin-right:4px;
     }
+
     .old-price{
       text-decoration:line-through;
       opacity:.58;
       margin-right:6px;
     }
+
     .new-price,
     .regular-price{
       color:var(--gold2);
@@ -474,13 +524,16 @@
       grid-template-columns:1.08fr .92fr;
       gap:22px;
     }
+
     .highlight-box h3{
       font-size:1.95rem;
       color:var(--gold2);
       margin-bottom:12px;
     }
+
     .highlight-box p,
     .highlight-box li{ color:var(--muted); }
+
     .highlight-box ul{ padding-left:18px; }
     .highlight-box ul li + li{ margin-top:8px; }
 
@@ -488,19 +541,23 @@
       overflow:hidden;
       margin-top:24px;
     }
+
     .price-table-header{
       padding:18px 22px;
       border-bottom:1px solid rgba(236,194,82,.12);
       background:rgba(245,214,123,.08);
     }
+
     .price-table-header h3{
       font-size:1.95rem;
       color:var(--gold2);
     }
+
     .price-table table{
       width:100%;
       border-collapse:collapse;
     }
+
     .price-table th,
     .price-table td{
       padding:14px 18px;
@@ -509,11 +566,13 @@
       font-size:.95rem;
       vertical-align:top;
     }
+
     .price-table th{
       color:var(--gold2);
       font-weight:600;
       background:rgba(245,214,123,.06);
     }
+
     .price-table td{ color:var(--muted); }
     .price-table tr:last-child td{ border-bottom:none; }
 
@@ -530,21 +589,34 @@
       gap:24px;
       align-items:start;
     }
+
     .review-widget-wrap{
       min-height:100%;
     }
+
     .review-note{
       margin-top:14px;
       color:rgba(246,235,210,.72);
       font-size:.92rem;
     }
+
     .wkdb-embed{
       margin-top:18px;
-      padding:18px;
-      border-radius:18px;
-      background:rgba(255,255,255,.04);
-      border:1px solid rgba(236,194,82,.12);
+      padding:22px;
+      border-radius:20px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(236,194,82,.16);
       overflow:hidden;
+      min-height:260px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+    }
+
+    #wkdb-widget{
+      width:100%;
     }
 
     .gallery-grid{
@@ -552,16 +624,19 @@
       grid-template-columns:repeat(3, 1fr);
       gap:18px;
     }
+
     .gallery-card{
       overflow:hidden;
       position:relative;
     }
+
     .gallery-card img{
       width:100%;
       height:300px;
       object-fit:cover;
       transition:transform .35s ease;
     }
+
     .gallery-card:hover img{ transform:scale(1.05); }
 
     .voucher-grid{
@@ -570,6 +645,7 @@
       gap:24px;
       align-items:center;
     }
+
     .voucher-grid img{
       width:100%;
       border-radius:var(--radius);
@@ -582,17 +658,20 @@
       grid-template-columns:1fr 1fr;
       gap:24px;
     }
+
     .contact-card h3{
       font-size:1.95rem;
       color:var(--gold2);
       margin-bottom:12px;
     }
+
     .contact-row{
       display:flex;
       flex-direction:column;
       gap:10px;
       color:var(--muted);
     }
+
     .contact-row strong{ color:#fff0c7; }
 
     .cta-row{
@@ -609,6 +688,7 @@
       border:1px solid var(--border);
       box-shadow:var(--shadow);
     }
+
     .map-wrap iframe{
       width:100%;
       height:100%;
@@ -645,6 +725,7 @@
       border-top:1px solid rgba(236,194,82,.14);
       background:linear-gradient(180deg, rgba(37, 7, 53, .92), rgba(22, 3, 33, .96));
     }
+
     .footer-inner{
       display:flex;
       flex-wrap:wrap;
@@ -660,6 +741,7 @@
       .gallery-grid{
         grid-template-columns:1fr 1fr;
       }
+
       .grid-2,
       .announcement,
       .highlights,
@@ -668,7 +750,9 @@
       .review-section-grid{
         grid-template-columns:1fr;
       }
+
       .nav{ gap:14px; }
+
       .nav-links{
         max-width:680px;
         gap:12px;
@@ -677,6 +761,7 @@
 
     @media (max-width: 760px){
       .nav{ flex-wrap:wrap; }
+
       .nav-links{
         width:100%;
         justify-content:space-between;
@@ -684,20 +769,25 @@
         font-size:.9rem;
         max-width:none;
       }
+
       .brand img{
         width:54px;
         height:54px;
       }
+
       .brand-text strong{ font-size:1.52rem; }
       section{ padding:68px 0; }
+
       .promo-grid,
       .feature-grid,
       .gallery-grid,
       .benefit-grid{
         grid-template-columns:1fr;
       }
+
       .hero{ min-height:auto; }
       .hero-inner{ padding:74px 0 66px; }
+
       .card,
       .info-box,
       .feature-box,
@@ -707,16 +797,21 @@
       .review-widget-wrap{
         padding:20px;
       }
+
       .studio-image,
       .announcement img{ min-height:unset; }
+
       .service-image{ height:220px; }
       .gallery-card img{ height:240px; }
+
       .price-table th,
       .price-table td{
         padding:12px 12px;
         font-size:.9rem;
       }
+
       .footer-inner{ flex-direction:column; }
+
       .whatsapp-float{
         right:14px;
         bottom:14px;
@@ -907,33 +1002,33 @@
         <div class="section-head">
           <h2>Bewertungen & Kundenerfahrungen</h2>
           <p>
-            Vertrauen ist bei einer Massage besonders wichtig. Deshalb haben wir das Bewertungs-Widget
-            direkt in die Website integriert, damit Besucherinnen und Besucher echte Rückmeldungen schnell
-            und sichtbar finden.
+            Echte Bewertungen schaffen Vertrauen. Überzeugen Sie sich selbst von den Erfahrungen unserer Kundinnen und Kunden.
           </p>
         </div>
 
         <div class="review-section-grid">
           <div class="review-widget-wrap">
-            <h3>Das sagen unsere Kundinnen & Kunden</h3>
+            <h3>Warum Bewertungen wichtig sind</h3>
             <p>
-              Bewertungen schaffen Vertrauen und helfen neuen Gästen dabei, sich ein authentisches Bild
-              von Studio, Service und Atmosphäre zu machen.
+              Transparente Kundenerfahrungen geben Ihnen Sicherheit bei der Wahl Ihres Studios.
+              Wir legen großen Wert auf ehrliche Rückmeldungen und höchste Zufriedenheit.
             </p>
+
             <div class="badge-row">
-              <span class="badge">Mehr Vertrauen</span>
-              <span class="badge">Direkt auf der Website</span>
-              <span class="badge">Ideal vor der Terminbuchung</span>
+              <span class="badge">Verifizierte Bewertungen</span>
+              <span class="badge">Echte Kundenerfahrungen</span>
+              <span class="badge">Maximale Transparenz</span>
             </div>
+
             <div class="review-note">
-              Das Widget ist bewusst oberhalb von Preisübersicht und Kontakt platziert, damit es an einer
-              conversion-starken Stelle sichtbar ist.
+              Das Bewertungs-Widget ist bewusst prominent platziert, damit Besucherinnen und Besucher sich direkt ein Bild machen können – noch vor Preisübersicht und Kontakt.
             </div>
           </div>
 
           <div class="review-widget-wrap">
-            <h3>Offizielles Bewertungs-Widget</h3>
-            <p>Hier wird das Kunden-Widget von werkenntdenBESTEN.de eingebunden.</p>
+            <h3>Unsere Bewertungen</h3>
+            <p>Offizielle Bewertungen von werkenntdenBESTEN.de</p>
+
             <div class="wkdb-embed">
               <div id="wkdb-widget"></div>
             </div>
@@ -1468,7 +1563,6 @@
     WhatsApp
   </a>
 
-  <!-- werkenntdenBESTEN.de HTML Widget -->
   <script
     type="text/javascript"
     src="https://www.wkdb-siegel.de/v1/widget-*U1KYzBZGieGz5GptkUDuCJBaTyPcq7Q4MjZX168rmGZaUdiFz-qpDfTnARRuzbdCR2RdntLcw3loCN_pdlaOdRc2n5QOPEpvVMyHR4urVFPem2XgdpRbGLTEw8cyuERJBmy9f5YJ2gwnP7xrmTdLG4YxDD71XNwNh6POtkZHQIM.js"
