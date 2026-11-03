@@ -841,6 +841,13 @@
         min-height:54px;
       }
     }
+    /* Impressum – gleiche Farbwelt wie die übrigen Kontaktkarten. */
+    .impressum-section{ border-top:1px solid var(--border); }
+    .impressum-card .contact-row{ gap:15px; overflow-wrap:anywhere; }
+    .impressum-card .contact-row > div{ display:flex; flex-direction:column; gap:8px; }
+    .impressum-card .contact-row p{ margin:0; }
+    .impressum-card a{ color:var(--gold2); text-decoration:underline; text-underline-offset:3px; }
+    .footer-legal{ color:var(--gold2); text-decoration:underline; text-underline-offset:3px; font-weight:600; }
   </style>
 </head>
 <body>
@@ -1427,10 +1434,50 @@
 </div>
 </div>
 </section>
+<!-- Impressum: Angaben vom Websitebetreiber bereitgestellt. -->
+<section id="impressum" class="impressum-section" aria-labelledby="impressum-titel">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="impressum-titel">Impressum</h2>
+      <p>Angaben gemäß § 5 DDG</p>
+    </div>
+    <div class="contact-grid impressum-grid">
+      <div class="contact-card impressum-card">
+        <h3>Betreiber &amp; Kontakt</h3>
+        <div class="contact-row">
+          <p><strong>MAYYAH Thaimassage</strong></p>
+          <p>Hauptstraße 53a<br>51519 Odenthal<br>Deutschland</p>
+          <p><strong>Inhaber:</strong><br>Sukumpan Parnich</p>
+          <p><strong>Telefon:</strong> <a href="tel:+4917643195587">0176 43195587</a></p>
+          <p><strong>E-Mail:</strong> <a href="mailto:info.mayyah@gmx.de">info.mayyah@gmx.de</a></p>
+          <p><strong>Website:</strong> <a href="https://www.mayyahthaimassage.de">https://www.mayyahthaimassage.de</a></p>
+        </div>
+      </div>
+      <div class="contact-card impressum-card">
+        <h3>Weitere rechtliche Angaben</h3>
+        <div class="contact-row">
+          <div>
+            <p><strong>Umsatzsteuer-ID</strong></p>
+            <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:</p>
+            <p>DE461641362</p>
+          </div>
+          <div>
+            <p><strong>Angaben zur Berufshaftpflichtversicherung</strong></p>
+            <p>Name und Sitz des Versicherers:</p>
+            <p>AXA Versicherung AG<br>Colonia-Allee 10–20<br>51067 Köln<br>Deutschland</p>
+          </div>
+          <div>
+            <p><strong>Geltungsbereich der Versicherung:</strong> Deutschland</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <footer>
 <div class="container footer-inner">
-<span>©️ Mayyah Thaimassage – Alle Rechte vorbehalten</span>
+<span>©️ Mayyah Thaimassage – Alle Rechte vorbehalten · <a class="footer-legal" href="#impressum">Impressum</a></span>
 <span>Hauptstraße 53a · 51519 Odenthal · Tel.: 02174 7401974 · WhatsApp: 0176 43195587 · E-Mail: <a href="mailto:info.mayyah@gmx.de">info.mayyah@gmx.de</a></span>
 </div>
 </footer>
